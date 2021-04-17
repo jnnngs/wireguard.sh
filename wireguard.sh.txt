@@ -18,7 +18,7 @@
 <span>To see these additional updates run: apt list --upgradable</span>
 <br/>
 <span>Last login: Sat Apr 17 10:05:31 2021</span>  
-<br/><br/>
+<br/>
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
 <span id="a">╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴</span>
