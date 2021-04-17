@@ -1,2 +1,3 @@
-# wireguard.sh
-Website and installation script for wireguard.sh
+# neggs.beer
+Terminal based beer website 
+Ascci Art used https://www.text-image.com/convert/
