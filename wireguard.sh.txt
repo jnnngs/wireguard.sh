@@ -1,28 +1,23 @@
-<span id="a">login as: wireguard.sh</span>
-<span id="a">wireguard.sh@127.0.0.1's password:</span>
-<span id="a">Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.4.0-29-generic x86_64)</span>
+<span>login as: wireguard.sh</span>
+<span>wireguard.sh@127.0.0.1's password:</span>
+<span>Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.4.0-29-generic x86_64)</span>
 <br/>
-<span id="a"> * Documentation:  https://help.ubuntu.com</span>
-<span id="a"> * Management:     https://landscape.canonical.com</span>
-<span id="a"> * Support:        https://ubuntu.com/advantage</span>
+<span id="c"> * Documentation:  https://help.ubuntu.com</span>
+<span id="c"> * Management:     https://landscape.canonical.com</span>
+<span id="c"> * Support:        https://ubuntu.com/advantage</span>
 <br/>
-<span id="a">  System information as of Sat 17 Apr 2021 11:43:57 AM CEST</span>
+<span id="c">  System information as of Sat 17 Apr 2021 11:43:57 AM CEST</span>
 <br/>
-<span id="a">  System load:  0.0                Processes:             94</span>
-<span id="a">  Usage of /:   12.9% of 17.66GB   Users logged in:       1</span>
-<span id="a">  Memory usage: 11%                IPv4 address for eth0: 127.0.0.1</span>
-<span id="a">  Swap usage:   0%                 IPv4 address for wg0:  10.7.0.1</span>
+<span id="c">  System load:  0.0                Processes:             94</span>
+<span id="c">  Usage of /:   12.9% of 17.66GB   Users logged in:       1</span>
+<span id="c">  Memory usage: 11%                IPv4 address for eth0: 127.0.0.1</span>
+<span id="c">  Swap usage:   0%                 IPv4 address for wg0:  10.7.0.1</span>
 <br/>
-<span id="a"> * Introducing self-healing high availability clusters in MicroK8s.</span>
-<span id="a">   Simple, hardened, Kubernetes for production, from RaspberryPi to DC.</span>
+<span id="c">14 updates can be installed immediately.</span>
+<span id="c">8 of these updates are security updates.</span>
+<span id="c">To see these additional updates run: apt list --upgradable</span>
 <br/>
-<span id="a">     https://microk8s.io/high-availability</span>
-<br/>
-<span id="a">14 updates can be installed immediately.</span>
-<span id="a">8 of these updates are security updates.</span>
-<span id="a">To see these additional updates run: apt list --upgradable</span>
-<br/>
-<span id="a">Last login: Sat Apr 17 10:05:31 2021</span>
+<span id="c">Last login: Sat Apr 17 10:05:31 2021</span>
 <br/><br/>
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
@@ -31,10 +26,10 @@
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat wireguard.txt
 <br/><br/>
-"<span id="k">wget -qO- wireguard.sh | bash</span>".
+"<span id="c">wget -qO- wireguard.sh | bash</span>".
 <br/><br/>
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> | 
 <br/><br/>
-"<span id="k">curl -Lso- wireguard.sh | bash</span>".
+"<span id="c">curl -Lso- wireguard.sh | bash</span>".
 <br/><br/>
 <p>exit</p>
