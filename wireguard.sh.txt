@@ -26,10 +26,10 @@
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat wireguard.txt
 <br/><br/>
-"<span id="c">wget -qO- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</span>".
+"<pre>wget -qO- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>".
 <br/><br/>
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> | 
 <br/><br/>
-"<span id="c">curl -Lso- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</span>".
+"<pre>curl -Lso- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>".
 <br/><br/>
 <p>exit</p>
