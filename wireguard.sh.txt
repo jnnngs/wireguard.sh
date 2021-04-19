@@ -18,14 +18,14 @@
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
 <span id="a">╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴</span>
-<br/><br/>
+<br/>
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat wireguard.txt
-<br/><br/>
+<br/>
 <pre>wget -qO- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>
-<br/><br/>
+<br/>
 <pre> | </pre>
-<br/><br/>
+<br/>
 <pre>curl -Lso- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>
-<br/><br/>
+<br/>
 <p>exit</p>
