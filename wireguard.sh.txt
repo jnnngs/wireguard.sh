@@ -1,10 +1,10 @@
 <span>login as: wireguard.sh</span>
 <span>wireguard.sh@127.0.0.1's password:</span>
-<span>Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.4.0-29-generic x86_64)</span>
+<span>Welcome to wireguard v1.0</span>
 <br/>
-<span> * Documentation:  https://help.ubuntu.com</span>
-<span> * Management:     https://landscape.canonical.com</span>
-<span> * Support:        https://ubuntu.com/advantage</span>
+<span> * Documentation:  https://www.wireguard.com/</span>
+<span> * Management:     https://www.wireguard.com/quickstart/</span>
+<span> * Support:        https://webchat.freenode.net/#wireguard</span>
 <br/>
 <span>  System information as of Sat 17 Apr 2021 11:43:57 AM CEST</span>
 <br/>
@@ -13,11 +13,7 @@
 <span>  Memory usage: 11%                IPv4 address for eth0: 127.0.0.1</span>
 <span>  Swap usage:   0%                 IPv4 address for wg0:  10.7.0.1</span>
 <br/>
-<span>14 updates can be installed immediately.</span>
-<span>8 of these updates are security updates.</span>
-<span>To see these additional updates run: apt list --upgradable</span>
-<br/>
-<span>Last login: Sat Apr 17 10:05:31 2021</span>  
+<span>0 updates can be installed.</span>
 <br/>
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
@@ -28,7 +24,7 @@
 <br/><br/>
 <pre>wget -qO- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>
 <br/><br/>
-<span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> | 
+<pre> | </pre>
 <br/><br/>
 <pre>curl -Lso- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>
 <br/><br/>
