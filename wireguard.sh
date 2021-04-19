@@ -30,26 +30,22 @@ elif [[ -e /etc/fedora-release ]]; then
 	os="fedora"
 	os_version=$(grep -oE '[0-9]+' /etc/fedora-release | head -1)
 else
-	echo "This installer seems to be running on an unsupported distribution.
-Supported distributions are Ubuntu, Debian, CentOS, and Fedora."
+	echo "This installer seems to be running on an unsupported distribution. Supported distributions are Ubuntu, Debian, CentOS, and Fedora."
 	exit
 fi
 
 if [[ "$os" == "ubuntu" && "$os_version" -lt 1804 ]]; then
-	echo "Ubuntu 18.04 or higher is required to use this installer.
-This version of Ubuntu is too old and unsupported."
+	echo "Ubuntu 18.04 or higher is required to use this installer. This version of Ubuntu is too old and unsupported."
 	exit
 fi
 
 if [[ "$os" == "debian" && "$os_version" -lt 10 ]]; then
-	echo "Debian 10 or higher is required to use this installer.
-This version of Debian is too old and unsupported."
+	echo "Debian 10 or higher is required to use this installer. This version of Debian is too old and unsupported."
 	exit
 fi
 
 if [[ "$os" == "centos" && "$os_version" -lt 7 ]]; then
-	echo "CentOS 7 or higher is required to use this installer.
-This version of CentOS is too old and unsupported."
+	echo "CentOS 7 or higher is required to use this installer. This version of CentOS is too old and unsupported."
 	exit
 fi
 
@@ -63,8 +59,7 @@ systemd-detect-virt -cq
 is_container="$?"
 
 if [[ "$os" == "fedora" && "$os_version" -eq 31 && $(uname -r | cut -d "." -f 2) -lt 6 && ! "$is_container" -eq 0 ]]; then
-	echo 'Fedora 31 is supported, but the kernel is outdated.
-Upgrade the kernel using "dnf upgrade kernel" and restart.'
+	echo 'Fedora 31 is supported, but the kernel is outdated. Upgrade the kernel using "dnf upgrade kernel" and restart.'
 	exit
 fi
 
@@ -75,14 +70,12 @@ fi
 
 if [[ "$is_container" -eq 0 ]]; then
 	if [ "$(uname -m)" != "x86_64" ]; then
-		echo "In containerized systems, this installer supports only the x86_64 architecture.
-The system runs on $(uname -m) and is unsupported."
+		echo "In containerized systems, this installer supports only the x86_64 architecture. The system runs on $(uname -m) and is unsupported."
 		exit
 	fi
 	# TUN device is required to use BoringTun if running inside a container
 	if [[ ! -e /dev/net/tun ]] || ! ( exec 7<>/dev/net/tun ) 2>/dev/null; then
-		echo "The system does not have the TUN device available.
-TUN needs to be enabled before running this installer."
+		echo "The system does not have the TUN device available. TUN needs to be enabled before running this installer."
 		exit
 	fi
 fi
