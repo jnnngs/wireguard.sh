@@ -209,12 +209,13 @@ EOF
 setup_environment
 
 if [[ ! -e /etc/wireguard/wg0.conf ]]; then
-	echo -e -n "${lightcyan}"
 	clear
+        echo -e -n "${cyan}"
 	echo "╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬"
         echo "║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤"
         echo "╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴"
-	echo 
+	echo
+	echo -e -n "${green}"
 	# If system has a single IPv4, it is selected automatically. Else, ask the user
 	if [[ $(ip -4 addr | grep inet | grep -vEc '127(\.[0-9]{1,3}){3}') -eq 1 ]]; then
 		ip=$(ip -4 addr | grep inet | grep -vE '127(\.[0-9]{1,3}){3}' | cut -d '/' -f 1 | grep -oE '[0-9]{1,3}(\.[0-9]{1,3}){3}')
@@ -536,12 +537,12 @@ EOF
 	echo -e -n "${nocolor}"
 else
 	clear
-	echo -e -n "${lightcyan}"
+	echo -e -n "${cyan}"
 	echo "╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬"
         echo "║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤"
         echo "╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴"
 	echo
-	echo -e -n "${blue}"
+	echo -e -n "${lightcyan}"
 	echo "WireGuard is already installed."
 	echo
 	echo -e -n "${green}"
