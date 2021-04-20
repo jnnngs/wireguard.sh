@@ -14,9 +14,9 @@
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt
 <br/>
-<span title="Click to Copy" id="c">Run one of the following commands to automatically install wireguard.</span>
+<span id="c">Run one of the following commands to automatically install wireguard.</span>
 <br/>
-<span id="wget" class="btn" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
+<span data-tooltip="Click to Copy" id="wget" class="btn" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
 <pre> or </pre>
-<span title="Click to Copy" id="curl" class="btn" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
+<span data-tooltip="Click to Copy" id="curl" class="btn" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
 <p>exit</p>
