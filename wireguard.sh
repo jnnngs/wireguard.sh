@@ -14,7 +14,7 @@ if [[ $(uname -r | cut -d "." -f 1) -eq 2 ]]; then
 	echo "The system is running an old kernel, which is incompatible with this installer."
 	exit
 fi
-
+ 
 # Detect OS
 # $os_version variables aren't always in use, but are kept here for convenience
 if grep -qs "ubuntu" /etc/os-release; then
