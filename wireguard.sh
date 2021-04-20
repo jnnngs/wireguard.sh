@@ -755,6 +755,7 @@ else
 					rm -f /usr/local/sbin/boringtun /usr/local/sbin/boringtun-upgrade
 				fi
 				echo
+				echo -e -n "${green}"
 				echo "WireGuard removed!"
 				echo -e -n "${nocolor}"
 			else
