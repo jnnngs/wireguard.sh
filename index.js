@@ -111,9 +111,3 @@ function t() {
 var clipboardDemos=new ClipboardJS('[data-clipboard-copy]');clipboardDemos.on('success',function(e){e.clearSelection();console.info('Action:',e.action);console.info('Text:',e.text);console.info('Trigger:',e.trigger);showTooltip(e.trigger,'Copied!');});clipboardDemos.on('error',function(e){console.error('Action:',e.action);console.error('Trigger:',e.trigger);showTooltip(e.trigger,fallbackMessage(e.action));});
 function clearTooltip(elem){elem.setAttribute('data-tooltip','Click to Copy');}
 function showTooltip(elem,msg){elem.setAttribute('data-tooltip',msg);}
-
-window.onload = function(){
-  document.getElementById("wget").addEventListener("mouseleave", function() {
-    document.getElementById("wget").setAttribute('data-tooltip','Click to Copy');
-  });
-}
