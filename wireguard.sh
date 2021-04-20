@@ -1,47 +1,6 @@
 #!/bin/bash
-
-function setup_environment() {
-    ### define colors ###
-    lightred=$'\033[1;31m'  # light red
-    red=$'\033[0;31m'  # red
-    lightgreen=$'\033[1;32m'  # light green
-    green=$'\033[0;32m'  # green
-    lightblue=$'\033[1;34m'  # light blue
-    blue=$'\033[0;34m'  # blue
-    lightpurple=$'\033[1;35m'  # light purple
-    purple=$'\033[0;35m'  # purple
-    lightcyan=$'\033[1;36m'  # light cyan
-    cyan=$'\033[0;36m'  # cyan
-    lightgray=$'\033[0;37m'  # light gray
-    white=$'\033[1;37m'  # white
-    brown=$'\033[0;33m'  # brown
-    yellow=$'\033[1;33m'  # yellow
-    darkgray=$'\033[1;30m'  # dark gray
-    black=$'\033[0;30m'  # black
-    nocolor=$'\e[0m' # no color
-
-    echo -e -n "${lightred}"
-    echo -e -n "${red}"
-    echo -e -n "${lightgreen}"
-    echo -e -n "${green}"
-    echo -e -n "${lightblue}"
-    echo -e -n "${blue}"
-    echo -e -n "${lightpurple}"
-    echo -e -n "${purple}"
-    echo -e -n "${lightcyan}"
-    echo -e -n "${cyan}"
-    echo -e -n "${lightgray}"
-    echo -e -n "${white}"
-    echo -e -n "${brown}"
-    echo -e -n "${yellow}"
-    echo -e -n "${darkgray}"
-    echo -e -n "${black}"
-    echo -e -n "${nocolor}"
-    clear
-
-    # Set Vars
-    LOGFILE='/var/log/wireguardSH.log'
-}
+# credit to https://github.com/Nyr/wireguard-install for the hardwork!
+#
 
 # Detect Debian users running the script with "sh" instead of bash
 if readlink /proc/$$/exe | grep -q "dash"; then
@@ -123,7 +82,51 @@ if [[ "$is_container" -eq 0 ]]; then
 	fi
 fi
 
+function setup_environment() {
+    ### define colors ###
+    lightred=$'\033[1;31m'  # light red
+    red=$'\033[0;31m'  # red
+    lightgreen=$'\033[1;32m'  # light green
+    green=$'\033[0;32m'  # green
+    lightblue=$'\033[1;34m'  # light blue
+    blue=$'\033[0;34m'  # blue
+    lightpurple=$'\033[1;35m'  # light purple
+    purple=$'\033[0;35m'  # purple
+    lightcyan=$'\033[1;36m'  # light cyan
+    cyan=$'\033[0;36m'  # cyan
+    lightgray=$'\033[0;37m'  # light gray
+    white=$'\033[1;37m'  # white
+    brown=$'\033[0;33m'  # brown
+    yellow=$'\033[1;33m'  # yellow
+    darkgray=$'\033[1;30m'  # dark gray
+    black=$'\033[0;30m'  # black
+    nocolor=$'\e[0m' # no color
+
+    echo -e -n "${lightred}"
+    echo -e -n "${red}"
+    echo -e -n "${lightgreen}"
+    echo -e -n "${green}"
+    echo -e -n "${lightblue}"
+    echo -e -n "${blue}"
+    echo -e -n "${lightpurple}"
+    echo -e -n "${purple}"
+    echo -e -n "${lightcyan}"
+    echo -e -n "${cyan}"
+    echo -e -n "${lightgray}"
+    echo -e -n "${white}"
+    echo -e -n "${brown}"
+    echo -e -n "${yellow}"
+    echo -e -n "${darkgray}"
+    echo -e -n "${black}"
+    echo -e -n "${nocolor}"
+    clear
+
+    # Set Vars
+    LOGFILE='/var/log/wireguardSH.log'
+}
+
 new_client_dns () {
+        echo -e -n "${cyan}"
 	echo "Select a DNS server for the client:"
 	echo "   1) Current system resolvers"
 	echo "   2) Google"
@@ -131,6 +134,7 @@ new_client_dns () {
 	echo "   4) OpenDNS"
 	echo "   5) Quad9"
 	echo "   6) AdGuard"
+	echo -e -n "${nocolor}"
 	read -p "DNS server [1]: " dns
 	until [[ -z "$dns" || "$dns" =~ ^[1-6]$ ]]; do
 		echo "$dns: invalid selection."
@@ -265,7 +269,9 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 		ip6=$(ip -6 addr | grep 'inet6 [23]' | cut -d '/' -f 1 | grep -oE '([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}' | sed -n "$ip6_number"p)
 	fi
 	echo
+	echo -e -n "${cyan}"
 	echo "What port should WireGuard listen to?"
+	echo -e -n "${nocolor}"
 	read -p "Port [51820]: " port
 	until [[ -z "$port" || "$port" =~ ^[0-9]+$ && "$port" -le 65535 ]]; do
 		echo "$port: invalid port."
@@ -273,7 +279,9 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 	done
 	[[ -z "$port" ]] && port="51820"
 	echo
+	echo -e -n "${cyan}"
 	echo "Enter a name for the first client:"
+	echo -e -n "${nocolor}"
 	read -p "Name [client]: " unsanitized_client
 	# Allow a limited set of characters to avoid conflicts
 	client=$(sed 's/[^0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-]/_/g' <<< "$unsanitized_client")
@@ -298,7 +306,9 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 		fi
 	fi
 	echo
+	echo -e -n "${cyan}"
 	echo "WireGuard installation is ready to begin."
+	echo -e -n "${nocolor}"
 	# Install a firewall in the rare case where one is not already available
 	if ! systemctl is-active --quiet firewalld.service && ! hash iptables 2>/dev/null; then
 		if [[ "$os" == "centos" || "$os" == "fedora" ]]; then
@@ -311,7 +321,9 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 			firewall="iptables"
 		fi
 	fi
+	echo -e -n "${lightcyan}"
 	read -n1 -r -p "Press any key to continue..."
+	echo -e -n "${cyan}"
 	# Install WireGuard
 	# If not running inside a container, set up the WireGuard kernel module
 	if [[ ! "$is_container" -eq 0 ]]; then
@@ -519,6 +531,7 @@ EOF
 	# If the kernel module didn't load, system probably had an outdated kernel
 	# We'll try to help, but will not will not force a kernel upgrade upon the user
 	if [[ ! "$is_container" -eq 0 ]] && ! modprobe -nq wireguard; then
+	        echo -e -n "${red}"
 		echo "Warning!"
 		echo "Installation was finished, but the WireGuard kernel module could not load."
 		if [[ "$os" == "ubuntu" && "$os_version" -eq 1804 ]]; then
@@ -528,8 +541,11 @@ EOF
 		elif [[ "$os" == "centos" && "$os_version" -le 8 ]]; then
 			echo "Reboot the system to load the most recent kernel."
 		fi
+		echo -e -n "${nocolor}"
 	else
+	        echo -e -n "${cyan}"
 		echo "Finished!"
+		echo -e -n "${nocolor}"
 	fi
 	echo
 	echo "The client configuration is available in:" ~/"$client.conf"
@@ -560,7 +576,9 @@ else
 	case "$option" in
 		1)
 			echo
+			echo -e -n "${cyan}"
 			echo "Provide a name for the client:"
+			echo -e -n "${nocolor}"
 			read -p "Name: " unsanitized_client
 			# Allow a limited set of characters to avoid conflicts
 			client=$(sed 's/[^0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-]/_/g' <<< "$unsanitized_client")
@@ -578,7 +596,9 @@ else
 			qrencode -t UTF8 < ~/"$client.conf"
 			echo -e '\xE2\x86\x91 That is a QR code containing your client configuration.'
 			echo
+			echo -e -n "${green}"
 			echo "$client added. Configuration available in:" ~/"$client.conf"
+			echo -e -n "${nocolor}"
 			exit
 		;;
 		2)
@@ -587,11 +607,15 @@ else
 			number_of_clients=$(grep -c '^# BEGIN_PEER' /etc/wireguard/wg0.conf)
 			if [[ "$number_of_clients" = 0 ]]; then
 				echo
+				echo -e -n "${cyan}"
 				echo "There are no existing clients!"
+				echo -e -n "${nocolor}"
 				exit
 			fi
 			echo
+			echo -e -n "${red}"
 			echo "Select the client to remove:"
+			echo -e -n "${nocolor}"
 			grep '^# BEGIN_PEER' /etc/wireguard/wg0.conf | cut -d ' ' -f 3 | nl -s ') '
 			read -p "Client: " client_number
 			until [[ "$client_number" =~ ^[0-9]+$ && "$client_number" -le "$number_of_clients" ]]; do
@@ -600,10 +624,14 @@ else
 			done
 			client=$(grep '^# BEGIN_PEER' /etc/wireguard/wg0.conf | cut -d ' ' -f 3 | sed -n "$client_number"p)
 			echo
+			echo -e -n "${red}"
 			read -p "Confirm $client removal? [y/N]: " remove
+			echo -e -n "${nocolor}"
 			until [[ "$remove" =~ ^[yYnN]*$ ]]; do
 				echo "$remove: invalid selection."
+				echo -e -n "${red}"
 				read -p "Confirm $client removal? [y/N]: " remove
+				echo -e -n "${nocolor}"
 			done
 			if [[ "$remove" =~ ^[yY]$ ]]; then
 				# The following is the right way to avoid disrupting other active connections:
@@ -612,19 +640,27 @@ else
 				# Remove from the configuration file
 				sed -i "/^# BEGIN_PEER $client/,/^# END_PEER $client/d" /etc/wireguard/wg0.conf
 				echo
+				echo -e -n "${green}"
 				echo "$client removed!"
+				echo -e -n "${nocolor}"
 			else
 				echo
+				echo -e -n "${red}"
 				echo "$client removal aborted!"
+				echo -e -n "${nocolor}"
 			fi
 			exit
 		;;
 		3)
 			echo
+			echo -e -n "${red}"
 			read -p "Confirm WireGuard removal? [y/N]: " remove
+			echo -e -n "${nocolor}"
 			until [[ "$remove" =~ ^[yYnN]*$ ]]; do
 				echo "$remove: invalid selection."
+				echo -e -n "${red}"
 				read -p "Confirm WireGuard removal? [y/N]: " remove
+				echo -e -n "${nocolor}"
 			done
 			if [[ "$remove" =~ ^[yY]$ ]]; then
 				port=$(grep '^ListenPort' /etc/wireguard/wg0.conf | cut -d " " -f 3)
@@ -700,10 +736,14 @@ else
 					rm -f /usr/local/sbin/boringtun /usr/local/sbin/boringtun-upgrade
 				fi
 				echo
+				echo -e -n "${green}"
 				echo "WireGuard removed!"
+				echo -e -n "${nocolor}"
 			else
 				echo
+				echo -e -n "${red}"
 				echo "WireGuard removal aborted!"
+				echo -e -n "${nocolor}"
 			fi
 			exit
 		;;
