@@ -7,11 +7,6 @@ Welcome to wireguard v1.1
 * Client Downloads: https://www.wireguard.com/install/
 * Open Source: https://github.com/jnnngs/wireguard.sh
 
-╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬
-║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤
-╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴
-v1.1
-
 wireguard.sh:~$ cd wireguard.sh/
 wireguard.sh:~$ cat help.txt
 
@@ -22,6 +17,5 @@ bash <(wget -O - https://wireguard.sh/wireguard.sh)
 or
 
 bash <(curl -s https://wireguard.sh/wireguard.sh)
-
 
 exit
