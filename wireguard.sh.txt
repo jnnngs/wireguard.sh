@@ -1,18 +1,15 @@
 <span>login as: wireguard.sh</span>
 <span>wireguard.sh@127.0.0.1's password:</span>
-<span>Welcome to wireguard v1.0</span>
+<span>Welcome to wireguard v1.1</span>
 <br/>
 <span> * Documentation:  https://www.wireguard.com/</span>
 <span> * Client Downloads:     https://www.wireguard.com/install/</span>
 <span> * Support:        https://webchat.freenode.net/#wireguard</span>
 <br/>
-<span>  System information as of Sat 17 Apr 2021 11:43:57 AM CEST</span>
-<br/>
-<span>0 updates can be installed.</span>
-<br/>
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
 <span id="a">╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴</span>
+<span>                             v1.1</span>
 <br/>
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt
