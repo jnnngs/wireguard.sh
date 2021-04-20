@@ -4,7 +4,7 @@
 <br/>
 <span> * Documentation:  https://www.wireguard.com/</span>
 <span> * Client Downloads:     https://www.wireguard.com/install/</span>
-<span> * Support:        https://webchat.freenode.net/#wireguard</span>
+<span> * Open Source:        https://github.com/jnnngs/wireguard.sh</span>
 <br/>
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
