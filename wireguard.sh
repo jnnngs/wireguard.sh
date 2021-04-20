@@ -643,13 +643,15 @@ else
 			done
 			client=$(grep '^# BEGIN_PEER' /etc/wireguard/wg0.conf | cut -d ' ' -f 3 | sed -n "$client_number"p)
 			echo
+			echo -e -n "${red}"
 			read -p "Confirm $client removal? [y/N]: " remove
-			echo -e -n "${nocolor}"
 			until [[ "$remove" =~ ^[yYnN]*$ ]]; do
                                 echo "$remove: invalid selection."
+				echo -e -n "${red}"
 				read -p "Confirm $client removal? [y/N]: " remove
 			done
-			if [[ "$remove" =~ ^[yY]$ ]]; then
+                        echo -e -n "${nocolor}" 
+                        if [[ "$remove" =~ ^[yY]$ ]]; then
 				# The following is the right way to avoid disrupting other active connections:
 				# Remove from the live interface
 				wg set wg0 peer "$(sed -n "/^# BEGIN_PEER $client$/,\$p" /etc/wireguard/wg0.conf | grep -m 1 PublicKey | cut -d " " -f 3)" remove
@@ -670,12 +672,14 @@ else
 		;;
 		3)
 			echo
-			echo -e -n "${green}"
+			echo -e -n "${red}"
 			read -p "Confirm WireGuard removal? [y/N]: " remove
 			echo -e -n "${nocolor}"
 			until [[ "$remove" =~ ^[yYnN]*$ ]]; do
+			        echo -e -n "${red}"
 				echo "$remove: invalid selection."
 				read -p "Confirm WireGuard removal? [y/N]: " remove
+				echo -e -n "${nocolor}"
 			done
 			if [[ "$remove" =~ ^[yY]$ ]]; then
 				port=$(grep '^ListenPort' /etc/wireguard/wg0.conf | cut -d " " -f 3)
