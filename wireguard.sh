@@ -535,6 +535,7 @@ EOF
 	echo "New clients can be added by running this script again."
 else
 	clear
+	echo -e -n "${lightcyan}"
 	echo "╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬"
         echo "║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤"
         echo "╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴"
