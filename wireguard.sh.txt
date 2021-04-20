@@ -17,11 +17,11 @@
 <span id="k">Help: Run one of the following commands to install wireguard...</span>
 <span id="wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
 <button class="btn" data-clipboard-target="#wget">
-    <i class="far fa-copy">Copy</i>
+    <i class="far fa-copy"></i>
 </button>
 <pre> or </pre>
 <span id="curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
 <button class="btn" data-clipboard-target="#curl">
-    <i class="far fa-copy">Copy</i>
+    <i class="far fa-copy"></i>
 </button>
 <p>exit</p>
