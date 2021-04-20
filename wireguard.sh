@@ -613,9 +613,8 @@ else
 				exit
 			fi
 			echo
-			echo -e -n "${red}"
+			echo -e -n "${green}"
 			echo "Select the client to remove:"
-			echo -e -n "${nocolor}"
 			grep '^# BEGIN_PEER' /etc/wireguard/wg0.conf | cut -d ' ' -f 3 | nl -s ') '
 			read -p "Client: " client_number
 			until [[ "$client_number" =~ ^[0-9]+$ && "$client_number" -le "$number_of_clients" ]]; do
@@ -624,14 +623,11 @@ else
 			done
 			client=$(grep '^# BEGIN_PEER' /etc/wireguard/wg0.conf | cut -d ' ' -f 3 | sed -n "$client_number"p)
 			echo
-			echo -e -n "${red}"
 			read -p "Confirm $client removal? [y/N]: " remove
 			echo -e -n "${nocolor}"
 			until [[ "$remove" =~ ^[yYnN]*$ ]]; do
-				echo "$remove: invalid selection."
-				echo -e -n "${red}"
+                                echo "$remove: invalid selection."
 				read -p "Confirm $client removal? [y/N]: " remove
-				echo -e -n "${nocolor}"
 			done
 			if [[ "$remove" =~ ^[yY]$ ]]; then
 				# The following is the right way to avoid disrupting other active connections:
@@ -649,18 +645,17 @@ else
 				echo "$client removal aborted!"
 				echo -e -n "${nocolor}"
 			fi
+			echo -e -n "${nocolor}"
 			exit
 		;;
 		3)
 			echo
-			echo -e -n "${red}"
+			echo -e -n "${green}"
 			read -p "Confirm WireGuard removal? [y/N]: " remove
 			echo -e -n "${nocolor}"
 			until [[ "$remove" =~ ^[yYnN]*$ ]]; do
 				echo "$remove: invalid selection."
-				echo -e -n "${red}"
 				read -p "Confirm WireGuard removal? [y/N]: " remove
-				echo -e -n "${nocolor}"
 			done
 			if [[ "$remove" =~ ^[yY]$ ]]; then
 				port=$(grep '^ListenPort' /etc/wireguard/wg0.conf | cut -d " " -f 3)
@@ -736,7 +731,6 @@ else
 					rm -f /usr/local/sbin/boringtun /usr/local/sbin/boringtun-upgrade
 				fi
 				echo
-				echo -e -n "${green}"
 				echo "WireGuard removed!"
 				echo -e -n "${nocolor}"
 			else
