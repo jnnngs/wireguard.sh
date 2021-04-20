@@ -20,6 +20,6 @@
 <br/>
 <span> or </span>
 <br/>
-<span data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
+<span onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
 <br/><br/>
 <p>exit</p>
