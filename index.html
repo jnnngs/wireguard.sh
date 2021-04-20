@@ -23,10 +23,21 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <script src="https://kit.fontawesome.com/88479e0270.js" crossorigin="anonymous"></script>
-  </head> 
-  <body> 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+
+    <script type = "text/javascript" language = "javascript"></script>
+    $( document ).ready(function() {
+      $("#wget").click(function(){
+        $(".target").effect( "shake", {times:4}, 1000 );
+      });
+      $("#curl").click(function(){
+        $(".target").effect( "shake", {times:4}, 1000 );
+      });
+    });
+  </script>
+  </head> 
+  <body> 
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script> 
     <script type="text/javascript" src="index.js"> 
     </script> 
