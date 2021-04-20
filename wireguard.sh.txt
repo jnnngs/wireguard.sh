@@ -3,7 +3,7 @@
 <span>Welcome to wireguard v1.0</span>
 <br/>
 <span> * Documentation:  https://www.wireguard.com/</span>
-<span> * Management:     https://www.wireguard.com/quickstart/</span>
+<span> * Client Downloads:     https://www.wireguard.com/install/</span>
 <span> * Support:        https://webchat.freenode.net/#wireguard</span>
 <br/>
 <span>  System information as of Sat 17 Apr 2021 11:43:57 AM CEST</span>
