@@ -9,7 +9,7 @@
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
 <span id="a">╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴</span>
-<span>                             v1.1</span>
+<span>v1.1</span>
 <br/>
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt

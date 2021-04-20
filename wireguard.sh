@@ -220,6 +220,7 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 	echo "╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬"
         echo "║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤"
         echo "╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴"
+		echo "v1.1"
 	echo
 	echo -e -n "${green}"
 	# If system has a single IPv4, it is selected automatically. Else, ask the user
@@ -577,6 +578,7 @@ else
 	echo "╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬"
         echo "║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤"
         echo "╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴"
+		echo "v1.1"
 	echo
 	echo -e -n "${lightcyan}"
 	echo "WireGuard is already installed."
