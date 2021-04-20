@@ -15,9 +15,9 @@
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt
 <br/>
 <span id="k">Help: Run one of the following commands to install wireguard...</span>
-<span id="wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
+<div id="wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</div>
 <button id="wgetbutton" onclick="CopyToClipboard('wget')">Copy</button>
 <pre> or </pre>
-<span id="curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
+<div id="curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
 <button id="curlbutton" onclick="CopyToClipboard('curl')">Copy</button>
 <p>exit</p>
