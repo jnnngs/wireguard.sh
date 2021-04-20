@@ -339,7 +339,7 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 	fi
 	echo -e -n "${lightgreen}"
 	read -n1 -r -p "Press any key to continue..."
-	echo -e -n "${cyan}"
+	echo -e -n "${nocolor}"
 	# Install WireGuard
 	# If not running inside a container, set up the WireGuard kernel module
 	if [[ ! "$is_container" -eq 0 ]]; then
