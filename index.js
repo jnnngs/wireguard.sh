@@ -112,5 +112,5 @@ var clipboardDemos=new ClipboardJS('[data-clipboard-copy]');clipboardDemos.on('s
 function clearTooltip(elem){elem.setAttribute('data-tooltip','Click to Copy');}
 function showTooltip(elem,msg){elem.setAttribute('data-tooltip',msg);}
 
-var wget = document.getElementById('wget');wget.addEventListener('mouseleave',clearTooltip);wget.addEventListener('blur',clearTooltip);
-var curl = document.getElementById('curl');curl.addEventListener('mouseleave',clearTooltip);curl.addEventListener('blur',clearTooltip);
+const  wget = document.querySelector('#wget');wget.addEventListener('mouseleave',clearTooltip);wget.addEventListener('blur',clearTooltip);
+const  curl = document.querySelector('#curl');curl.addEventListener('mouseleave',clearTooltip);curl.addEventListener('blur',clearTooltip);
