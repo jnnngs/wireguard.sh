@@ -18,7 +18,7 @@
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt
 <br/>
 <span id="k">Help: Run one of the following commands to install wireguard...</span>
-<pre>wget -qO- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>
+<pre>wget -qO- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.txt | bash</pre>
 <pre> or </pre>
-<pre>curl -Lso- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.sh | bash</pre>
+<pre>curl -Lso- https://raw.githubusercontent.com/jnnngs/wireguard.sh/main/wireguard.txt | bash</pre>
 <p>exit</p>
