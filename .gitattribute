@@ -13,6 +13,9 @@
 
         # These files are text and should be normalized (Convert crlf => lf)
         *.php text
+        *.sh text
+        *.sh text eol=lf 
+        *.txt text eol=lf
         *.css text
         *.js text
         *.json text
