@@ -533,15 +533,18 @@ EOF
 	echo
 	echo "The client configuration is available in:" ~/"$client.conf"
 	echo "New clients can be added by running this script again."
+	echo -e -n "${nocolor}"
 else
 	clear
 	echo -e -n "${lightcyan}"
 	echo "╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬"
         echo "║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤"
         echo "╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴"
-	echo 
+	echo
+	echo -e -n "${blue}"
 	echo "WireGuard is already installed."
 	echo
+	echo -e -n "${green}"
 	echo "Select an option:"
 	echo "   1) Add a new client"
 	echo "   2) Remove an existing client"
@@ -552,6 +555,7 @@ else
 		echo "$option: invalid selection."
 		read -p "Option: " option
 	done
+	echo -e -n "${nocolor}"
 	case "$option" in
 		1)
 			echo
@@ -707,3 +711,4 @@ else
 		;;
 	esac
 fi
+echo -e -n "${nocolor}"
