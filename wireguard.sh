@@ -137,7 +137,9 @@ new_client_dns () {
 	echo -e -n "${nocolor}"
 	read -p "DNS server [1]: " dns
 	until [[ -z "$dns" || "$dns" =~ ^[1-6]$ ]]; do
+	        echo -e -n "${red}"
 		echo "$dns: invalid selection."
+		echo -e -n "${green}"
 		read -p "DNS server [1]: " dns
 	done
 		# DNS
@@ -231,8 +233,10 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 		ip -4 addr | grep inet | grep -vE '127(\.[0-9]{1,3}){3}' | cut -d '/' -f 1 | grep -oE '[0-9]{1,3}(\.[0-9]{1,3}){3}' | nl -s ') '
 		read -p "IPv4 address [1]: " ip_number
 		until [[ -z "$ip_number" || "$ip_number" =~ ^[0-9]+$ && "$ip_number" -le "$number_of_ip" ]]; do
+		        echo -e -n "${red}"
 			echo "$ip_number: invalid selection."
 			read -p "IPv4 address [1]: " ip_number
+			echo -e -n "${green}"
 		done
 		[[ -z "$ip_number" ]] && ip_number="1"
 		ip=$(ip -4 addr | grep inet | grep -vE '127(\.[0-9]{1,3}){3}' | cut -d '/' -f 1 | grep -oE '[0-9]{1,3}(\.[0-9]{1,3}){3}' | sed -n "$ip_number"p)
@@ -247,8 +251,10 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 		read -p "Public IPv4 address / hostname [$get_public_ip]: " public_ip
 		# If the checkip service is unavailable and user didn't provide input, ask again
 		until [[ -n "$get_public_ip" || -n "$public_ip" ]]; do
+		        echo -e -n "${red}"
 			echo "Invalid input."
 			read -p "Public IPv4 address / hostname: " public_ip
+			echo -e -n "${green}"
 		done
 		[[ -z "$public_ip" ]] && public_ip="$get_public_ip"
 	fi
@@ -265,8 +271,10 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 		ip -6 addr | grep 'inet6 [23]' | cut -d '/' -f 1 | grep -oE '([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}' | nl -s ') '
 		read -p "IPv6 address [1]: " ip6_number
 		until [[ -z "$ip6_number" || "$ip6_number" =~ ^[0-9]+$ && "$ip6_number" -le "$number_of_ip6" ]]; do
+		        echo -e -n "${red}"
 			echo "$ip6_number: invalid selection."
 			read -p "IPv6 address [1]: " ip6_number
+			echo -e -n "${green}"
 		done
 		[[ -z "$ip6_number" ]] && ip6_number="1"
 		ip6=$(ip -6 addr | grep 'inet6 [23]' | cut -d '/' -f 1 | grep -oE '([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}' | sed -n "$ip6_number"p)
@@ -277,8 +285,11 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
 	echo -e -n "${nocolor}"
 	read -p "Port [51820]: " port
 	until [[ -z "$port" || "$port" =~ ^[0-9]+$ && "$port" -le 65535 ]]; do
+	        echo -e -n "${red}"
 		echo "$port: invalid port."
 		read -p "Port [51820]: " port
+		echo -e -n "${green
+		}"
 	done
 	[[ -z "$port" ]] && port="51820"
 	echo
