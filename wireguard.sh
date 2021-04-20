@@ -486,6 +486,10 @@ EOF
 	echo "New clients can be added by running this script again."
 else
 	clear
+	echo "╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬"
+        echo "║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤"
+        echo "╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴"
+	echo 
 	echo "WireGuard is already installed."
 	echo
 	echo "Select an option:"
