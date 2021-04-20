@@ -16,7 +16,7 @@
 <br/>
 <span id="c">Run one of the following commands to automatically install wireguard.</span>
 <br/>
-<span data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
+<span onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
 <br/>
 <span> or </span>
 <br/>
