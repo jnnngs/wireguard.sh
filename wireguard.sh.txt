@@ -16,9 +16,9 @@
 <br/>
 <span id="c">Run one of the following commands to automatically install wireguard.</span>
 <br/>
-<span data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="left" data-clipboard-copy id="wget" class="btn" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
+<span data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" class="btn" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
 <br/>
 <pre> or </pre>
-<span data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="left" data-clipboard-copy id="curl" class="btn" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
+<span data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" class="btn" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
 <br/>
 <p>exit</p>
