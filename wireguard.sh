@@ -562,7 +562,7 @@ EOF
 		fi
 		echo -e -n "${nocolor}"
 	else
-	        echo -e -n "${cyan}"
+	        echo -e -n "${green}"
 		echo "Finished!"
 		echo -e -n "${nocolor}"
 	fi
