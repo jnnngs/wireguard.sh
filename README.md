@@ -1,5 +1,5 @@
 # WireGuard.sh
-Welcome to wireguard v1.1
+Welcome to Wireguard VPN Automated Script Installation
 
 * Documentation: https://www.wireguard.com/
 * Client Downloads: https://www.wireguard.com/install/
@@ -14,3 +14,5 @@ or
 
 bash <(curl -s https://wireguard.sh/wireguard.sh)
 
+# About
+WireGuard is a communication protocol and free and open-source software that implements encrypted virtual private networks, and was designed with the goals of ease of use, high speed performance, and low attack surface.
