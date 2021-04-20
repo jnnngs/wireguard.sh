@@ -1,25 +1,17 @@
 <span>login as: wireguard.sh</span>
 <span>wireguard.sh@127.0.0.1's password:</span>
-<span>Welcome to wireguard v1.1</span>
-<br/>
+<div>Welcome to wireguard v1.1</div>
 <span> * Documentation:  https://www.wireguard.com/</span>
 <span> * Client Downloads:     https://www.wireguard.com/install/</span>
-<span> * Open Source:        https://github.com/jnnngs/wireguard.sh</span>
-<br/>
+<div> * Open Source:        https://github.com/jnnngs/wireguard.sh</div>
 <span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
 <span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
 <span id="a">╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴</span>
-<span>v1.1</span>
-<br/>
-<span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
-<span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt
-<br/>
-<span id="c">Run one of the following commands to automatically install wireguard.</span>
-<br/>
-<span onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</span>
-<br/>
-<span> or </span>
-<br/>
-<span onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</span>
-<br/><br/>
+<div>v1.1</div>
+<div id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</div> cd wireguard.sh/
+<div id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</div> cat help.txt
+<div id="c">Run one of the following commands to automatically install wireguard.</div>
+<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</div>
+<div> or </div>
+<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
 <p>exit</p>
