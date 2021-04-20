@@ -22,25 +22,11 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
   </head> 
   <body> 
     <script type="text/javascript" src="index.js"> 
     </script> 
     <div id="console"></div> 
-    <script>
-    function CopyToClipboard(containerid) {
-      if (document.selection) {
-        var range = document.body.createTextRange();
-        range.moveToElementText(document.getElementById(containerid));
-        range.select().createTextRange();
-        document.execCommand("copy");
-      } else if (window.getSelection) {
-        var range = document.createRange();
-        range.selectNode(document.getElementById(containerid));
-        window.getSelection().addRange(range);
-        document.execCommand("copy");
-      }
-    }
-      </script>
    </body> 
 </html> 
