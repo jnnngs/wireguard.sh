@@ -12,9 +12,9 @@
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt
 <span/>
 <div id="c">Run one of the following commands to automatically install wireguard.</div>
-<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" class="command" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</div>
+<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" class="targetWget" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</div>
 <span/>
 <div> or </div>
-<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" class="command" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
+<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" class="targetCurl" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
 <br/>
 <div>exit</div>
