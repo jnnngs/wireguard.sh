@@ -109,6 +109,6 @@ function t() {
 }
 var clipboardDemos=new ClipboardJS('[data-clipboard-copy]');clipboardDemos.on('success',function(e){e.clearSelection();showTooltip(e.trigger,'Copied!');});clipboardDemos.on('error',function(e){console.error('Action:',e.action);console.error('Trigger:',e.trigger);showTooltip(e.trigger,fallbackMessage(e.action));});
 var btns=document.querySelectorAll('.btn');for(var i=0;i<btns.length;i++){btns[i].addEventListener('mouseleave',clearTooltip);btns[i].addEventListener('blur',clearTooltip);}
-function clearTooltip(e){e.currentTarget.setAttribute('class','btn');e.currentTarget.removeAttribute('data-tooltip');e.currentTarget.setAttribute('data-tooltip','Click to Copy');}
-function showTooltip(elem,msg){elem.setAttribute('class','btn tooltipped tooltipped-s');elem.setAttribute('data-tooltip',msg);}
+function clearTooltip(e){e.currentTarget.setAttribute('data-tooltip','Click to Copy');}
+function showTooltip(elem,msg){elem.setAttribute('data-tooltip',msg);}
 
