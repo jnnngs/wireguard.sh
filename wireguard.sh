@@ -627,7 +627,7 @@ else
 			number_of_clients=$(grep -c '^# BEGIN_PEER' /etc/wireguard/wg0.conf)
 			if [[ "$number_of_clients" = 0 ]]; then
 				echo
-				echo -e -n "${cyan}"
+				echo -e -n "${red}"
 				echo "There are no existing clients!"
 				echo -e -n "${nocolor}"
 				exit
