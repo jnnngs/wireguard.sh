@@ -16,12 +16,7 @@
 <br/>
 <span id="k">Help: Run one of the following commands to install wireguard...</span>
 <div id="wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</div>
-<div class="tooltip">
-<button onclick="myFunction()" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy</span>
-  Copy
-  </button>
-</div>
+<button id="button1" onclick="CopyToClipboard('wget')">Click to copy</button>
 <pre> or </pre>
 <div id="curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
 <p>exit</p>
