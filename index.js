@@ -112,6 +112,8 @@ var clipboardDemos=new ClipboardJS('[data-clipboard-copy]');clipboardDemos.on('s
 function clearTooltip(elem){elem.setAttribute('data-tooltip','Click to Copy');}
 function showTooltip(elem,msg){elem.setAttribute('data-tooltip',msg);}
 
-document.getElementById("wget").addEventListener("mouseleave", function() {
-  document.getElementById("wget").setAttribute('data-tooltip','Click to Copy');
-});
+window.onload = function(){
+  document.getElementById("wget").addEventListener("mouseleave", function() {
+    document.getElementById("wget").setAttribute('data-tooltip','Click to Copy');
+  });
+}
