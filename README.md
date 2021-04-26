@@ -14,5 +14,9 @@ or
 
 bash <(curl -s https://wireguard.sh/wireguard.sh)
 
+## asciinema
+<a href="https://asciinema.org/a/Omv2cu78lUiFdUqQMWXIetlda" target="_blank"><img width="25%" src="https://asciinema.org/a/Omv2cu78lUiFdUqQMWXIetlda.svg" /></a>
+
+
 # About
 WireGuard is a communication protocol and free and open-source software that implements encrypted virtual private networks, and was designed with the goals of ease of use, high speed performance, and low attack surface.
