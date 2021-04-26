@@ -17,6 +17,7 @@
 <span/>
 <div> or </div>
 <div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" class="shake" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
+<br/>
 <div id="c">Asciinema video below</div>
 <a href="https://asciinema.org/a/Omv2cu78lUiFdUqQMWXIetlda" target="_blank"><img width="25%" src="https://asciinema.org/a/Omv2cu78lUiFdUqQMWXIetlda.svg" /></a>
 <br/>
