@@ -1,4 +1,4 @@
-# WireGuard.sh
+# <span style='font-family: "Lucida Console";line-height: 8px;font-size: 8px;display: inline-block;'>░▒█░░▒█░░▀░░█▀▀▄░█▀▀░█▀▀▀░█░▒█░█▀▀▄░█▀▀▄░█▀▄░░░░█▀▀░█░░░<br>░▒█▒█▒█░░█▀░█▄▄▀░█▀▀░█░▀▄░█░▒█░█▄▄█░█▄▄▀░█░█░▄▄░▀▀▄░█▀▀█<br>░▒▀▄▀▄▀░▀▀▀░▀░▀▀░▀▀▀░▀▀▀▀░░▀▀▀░▀░░▀░▀░▀▀░▀▀░░▀▀░▀▀▀░▀░░▀<br></span>
 Welcome to Wireguard VPN Automated Script Installation
 
 * Documentation: https://www.wireguard.com/

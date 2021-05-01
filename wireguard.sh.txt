@@ -4,9 +4,7 @@
 <span> * Documentation:  https://www.wireguard.com/</span>
 <span> * Client Downloads:     https://www.wireguard.com/install/</span>
 <div> * Open Source:        https://github.com/jnnngs/wireguard.sh</div>
-<span id="a">╦ ╦┬┬─┐┌─┐╔═╗┬ ┬┌─┐┬─┐┌┬┐ ┌─┐┬ ┬</span>
-<span id="a">║║║│├┬┘├┤ ║ ╦│ │├─┤├┬┘ ││ └─┐├─┤</span>
-<span id="a">╚╩╝┴┴└─└─┘╚═╝└─┘┴ ┴┴└──┴┘o└─┘┴ ┴</span>
+<span style='font-family: "Lucida Console";line-height: 14px;font-size: 14px;display: inline-block;'>░▒█░░▒█░░▀░░█▀▀▄░█▀▀░█▀▀▀░█░▒█░█▀▀▄░█▀▀▄░█▀▄░░░░█▀▀░█░░░<br>░▒█▒█▒█░░█▀░█▄▄▀░█▀▀░█░▀▄░█░▒█░█▄▄█░█▄▄▀░█░█░▄▄░▀▀▄░█▀▀█<br>░▒▀▄▀▄▀░▀▀▀░▀░▀▀░▀▀▀░▀▀▀▀░░▀▀▀░▀░░▀░▀░▀▀░▀▀░░▀▀░▀▀▀░▀░░▀<br></span>
 <div>v1.1</div>
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cd wireguard.sh/
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat help.txt
@@ -18,13 +16,9 @@
 <div> or </div>
 <div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" class="shake" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
 <br/>
-<<<<<<< HEAD
-<script id="asciicast-Omv2cu78lUiFdUqQMWXIetlda" src="https://asciinema.org/a/Omv2cu78lUiFdUqQMWXIetlda.js" async></script><br/>
-=======
 <div id="c">Asciinema video below</div>
 <a href="https://asciinema.org/a/Omv2cu78lUiFdUqQMWXIetlda" target="_blank"><img width="25%" src="https://asciinema.org/a/Omv2cu78lUiFdUqQMWXIetlda.svg" /></a>
 <br/>
->>>>>>> c00de572b2c19f3bf47fa166a06053a5d31da7e4
 <span id="a">wireguard.sh</span>:<span id="b">~</span><span id="c">$</span> cat about.txt
 <div id="c">WireGuard is a communication protocol and free and open-source software that implements encrypted virtual private networks, and was designed with the goals of ease of use, high speed performance, and low attack surface.</div>
 <div>exit</div>
