@@ -1,4 +1,5 @@
 <span style='font-family: "Lucida Console";line-height: 14px;font-size: 14px;display: inline-block;'>░▒█░░▒█░░▀░░█▀▀▄░█▀▀░█▀▀▀░█░▒█░█▀▀▄░█▀▀▄░█▀▄░░░░█▀▀░█░░░<br>░▒█▒█▒█░░█▀░█▄▄▀░█▀▀░█░▀▄░█░▒█░█▄▄█░█▄▄▀░█░█░▄▄░▀▀▄░█▀▀█<br>░▒▀▄▀▄▀░▀▀▀░▀░▀▀░▀▀▀░▀▀▀▀░░▀▀▀░▀░░▀░▀░▀▀░▀▀░░▀▀░▀▀▀░▀░░▀<br></span>
+
 Welcome to Wireguard VPN Automated Script Installation
 
 * Documentation: https://www.wireguard.com/
