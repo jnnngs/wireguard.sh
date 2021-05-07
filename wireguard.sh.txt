@@ -10,7 +10,7 @@
 <span/>
 <div id="c">Run one of the following commands to automatically install wireguard.</div>
 <div id="c">Supported on Centos, Debian, Fedora & Ubuntu.</div>
-<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" class="shake" data-clipboard-target="#wget">bash <(wget -O - https://wireguard.sh/wireguard.sh)</div>
+<div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="wget" class="shake" data-clipboard-target="#wget">bash <(wget -q -O - https://wireguard.sh/wireguard.sh)</div>
 <span/>
 <div> or </div>
 <div onmouseleave="clearTooltip(this);" data-clipboard-action="copy" data-tooltip="Click to Copy" data-tooltip-position="bottom" data-clipboard-copy id="curl" class="shake" data-clipboard-target="#curl">bash <(curl -s https://wireguard.sh/wireguard.sh)</div>
