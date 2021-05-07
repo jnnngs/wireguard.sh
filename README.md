@@ -9,7 +9,7 @@ Welcome to Wireguard VPN Automated Script Installation
 
 Run one of the following commands to automatically install wireguard.
 
-bash <(wget -O - https://wireguard.sh/wireguard.sh)
+bash <(wget -q -O - https://wireguard.sh/wireguard.sh)
 
 or
 
